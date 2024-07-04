@@ -1,6 +1,4 @@
-### React Query Starter - Typescript (Hỏi Dân IT)
-
-Template này được sử dụng cho series "A State Manager for React" của tác giả Hỏi Dân IT (Eric)
+### React Query Starter - Typescript
 
 Các bước cần làm:
 
@@ -8,5 +6,4 @@ Các bước cần làm:
 2. Cài đặt các thư viện cần thiết: npm i
 3. Chạy dự án với câu lệnh: npm run dev
 
- 
-Truy cập:  http://localhost:5173/
+Truy cập: http://localhost:5173/

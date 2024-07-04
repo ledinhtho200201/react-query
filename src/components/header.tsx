@@ -17,7 +17,7 @@ function Header() {
     return (
         <Navbar className="bg-body-tertiary" data-bs-theme={mode}>
             <Container>
-                <Navbar.Brand href="#home">Hỏi Dân IT React Query</Navbar.Brand>
+                <Navbar.Brand href="#home">Chen Haoyu React Query</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Form.Check

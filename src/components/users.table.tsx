@@ -20,17 +20,17 @@ function UsersTable() {
     const users = [
         {
             "id": 1,
-            "name": "Eric",
-            "email": "eric@gmail.com"
+            "name": "Messi",
+            "email": "messi@gmail.com"
         },
         {
             "id": 2,
-            "name": "Hỏi Dân IT",
-            "email": "hoidanit@gmail.com"
+            "name": "Chen Haoyu",
+            "email": "vinimda@gmail.com"
         },
         {
             "id": 3,
-            "name": "Hỏi Dân IT",
+            "name": "Chen Haoyu",
             "email": "admin@gmail.com"
         }
     ]
