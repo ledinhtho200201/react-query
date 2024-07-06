@@ -8,6 +8,7 @@ import UsersPagination from './pagination/users.pagination';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
+import { calculatePagesCount } from '../helper';
 
 interface IUser {
     id: number;
@@ -83,12 +84,9 @@ function UsersTable() {
         queryKey: ['fetchUser', currentPage],
         queryFn: (): Promise<IUser[]> =>
             fetch(`http://localhost:8000/users?_page=${currentPage}&_limit=${PAGE_SIZE}`).then((res) => {
-                console.log(res.headers.get('X-Total-Count'))
                 const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
                 const page_size = PAGE_SIZE;
-                const total_pages = Math.ceil(total_items == 0 ? 0 : (total_items - 1) / page_size + 1);
-                console.log(total_pages)
-                setTotalPages(total_pages)
+                setTotalPages(calculatePagesCount(page_size, total_items))
                 return res.json()
             }
             ),
